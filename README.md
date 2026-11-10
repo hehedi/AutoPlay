@@ -1,19 +1,20 @@
 [简体中文](README.md) | [English](README_EN.md)
 
-**预计十二月上架并发布**
-
 # 一键播放 AutoPlay
 
 **看片、听歌、看图，也能逐帧检查专业拍摄素材。**
 
-[下载最新版](../../releases) · [AutoCard](https://github.com/hehedi/AutoCard) · [AutoLibrary](https://github.com/hehedi/AutoLibrary) · [关联软件](#related-apps) · [图文介绍](https://www.bilibili.com/opus/1261109162464509972) · [授权条款](LICENSE)
+> **发布计划：预计十二月上架并发布**
+
+[发布与下载](../../releases) · [AutoCard](https://github.com/hehedi/AutoCard) · [AutoLibrary](https://github.com/hehedi/AutoLibrary) · [关联软件](#related-apps) · [图文介绍](https://www.bilibili.com/opus/1261109162464509972) · [授权条款](LICENSE)
 
 免费使用 · 支持离线播放 · Windows / Linux · 中文 / English
 
 AutoPlay 是一款兼顾日常影音与专业素材审阅的播放器。除了常见视频、音乐和图片，还支持多种电影摄影机素材与相机 RAW 照片，将 HDR、LUT 预览、逐帧定位、A/B 对比和音画分析放进同一个播放界面。
 
 可独立安装和运行，也可与 AutoCard 导卡流程、AutoLibrary 资产库配合使用。平台与功能支持范围以对应发行包说明为准。
-[AutoPlay 主界面](docs/autoplay-main.png)
+
+![AutoPlay 主界面](docs/autoplay-main.png)
 
 ## 核心功能
 
@@ -44,7 +45,7 @@ AutoPlay 是一款兼顾日常影音与专业素材审阅的播放器。除了�
 - **看清声音细节**：按声道查看波形与频谱，缩放、平移并点击定位，也可保存包含歌曲资料和分析图表的截图。
 - **连续聆听**：支持循环、随机与连续播放，并为适用的 PCM 播放路线提供曲目无缝衔接。
 
-[音乐、封面与歌词](docs/音频2.png)
+![音乐、封面与歌词](docs/音频2.png)
 
 ## 拍摄现场与后期素材审阅
 
@@ -64,7 +65,30 @@ AutoPlay 是一款兼顾日常影音与专业素材审阅的播放器。除了�
 
 亮度波形、RGB 直方图与白平衡辅助可在侧栏查看或叠加到画面上，便于检查曝光和色彩分布；音频波形与频谱用于观察各声道的时间和频率变化。比较完成后，可将当前 A/B 画面保存为截图。
 
-[A/B 对比与分析图表](docs/比较视图2.jpg)
+![A/B 对比与分析图表](docs/比较视图2.jpg)
+
+## 更多界面
+
+<details>
+<summary>影音播放、HDR 与画幅裁切</summary>
+
+![HDR 与画幅裁切](docs/画幅裁切.jpg)
+
+</details>
+
+<details>
+<summary>专业素材、LUT 与元数据</summary>
+
+![专业素材与元数据](docs/专业格式.jpg)
+
+</details>
+
+<details>
+<summary>资源管理器缩略图</summary>
+
+![媒体缩略图与分类图标](docs/LOGO.jpg)
+
+</details>
 
 ## 更多播放与扩展能力
 
@@ -135,8 +159,8 @@ AutoLibrary 客户端依赖 AutoPlay；资料库的组织、索引与资料管�
 | --- | --- |
 | **BRAW / R3D** | 使用对应 SDK 读取原素材，提供回放、元数据、截图与缩略图等能力；可用的 GPU 路线和播放性能取决于素材、设备与驱动。 |
 | **ARRIRAW / ARRICORE** | 由 ARRI 解码组件提供回放、元数据和 LogC3 / LogC4 至 Rec.709 还原；HDE 压缩素材另需兼容的 CODEX HDE 组件，可用范围以发行说明为准。 |
-| **ProRes RAW** | 使用 Vulkan 解码，需兼容的 GPU |
-| **HDR / Dolby Vision** | HDR10、HDR10+、HLG 及 Dolby Vision(还可区分 Profile 和增强层) |
+| **ProRes RAW** | 使用 Vulkan 解码，需兼容的 GPU。 |
+| **HDR / Dolby Vision** | HDR10、HDR10+、HLG 及 Dolby Vision（可区分 Profile 和增强层）。 |
 | **DSD** | 支持 DSF / DFF 等来源；兼容 ASIO 驱动可原生输出 DSF 与未压缩 DFF，其他适用路线使用 PCM 播放。当前不提供 DoP 或 SACD ISO 解析。 |
 | **多声道与原码输出** | 支持相应 PCM 声道布局及部分 Dolby / DTS 编码的原码输出。当前原码路线仅适用于受支持结构、从起点以原速播放，定位、软件音量与混音等操作受限，不等同完整 Atmos / DTS:X 对象解码。 |
 | **光盘与投射** | 光盘导航、菜单及投射能力取决于可读取的来源、已安装组件与接收端；不同协议的画质和功能范围不同。 |
@@ -148,39 +172,6 @@ Windows 的 HDR 显示、WASAPI / ASIO、资源管理器缩略图等功能依赖
 图表、差异图和显示调整用于辅助审阅，不能单独证明显示器已完成物理校准。各格式可用的高级处理功能以当前回放路线为准。
 
 </details>
-
-## 更多界面
-
-<details>
-<summary>影音播放、HDR 与画幅裁切</summary>
-
-[HDR 与画幅裁切](docs/画幅裁切.jpg)
-
-</details>
-
-<details>
-<summary>音乐、歌词与声音分析</summary>
-
-[音乐与歌词](docs/音频2.png)
-
-</details>
-
-<details>
-<summary>专业素材、LUT 与 A/B 对比</summary>
-
-[专业素材与元数据](docs/专业格式.jpg)
-
-[A/B 对比与图表](docs/比较视图2.jpg)
-
-</details>
-
-<details>
-<summary>资源管理器缩略图</summary>
-
-[媒体缩略图与分类图标](docs/LOGO.jpg)
-
-</details>
--->
 
 ## 项目缘起
 
